@@ -10,14 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_01_223052) do
+ActiveRecord::Schema.define(version: 2021_06_01_225218) do
 
-  create_table "students", force: :cascade do |t|
+  create_table "kickboxers", force: :cascade do |t|
     t.string "name"
-    t.integer "grade"
-    t.string "class_name"
+    t.integer "speed"
+    t.integer "fist_size"
+    t.boolean "villain"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "missing_teeth"
   end
 
 end
